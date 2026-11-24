@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menus – Les As Épicés</title>
+<meta name="description" content="Les menus de la cantine solidaire Les As Épicés : cuisine indienne, africaine et orientale, végétarien, vegan ou viande.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-lang="fr">
+
+<header class="nav">
+  <a class="logo" href="index.html#home" aria-label="Les As Épicés">
+    <span class="logo-small">ASSOCIATION</span>
+    <span class="logo-main">LES <b>AS</b> ÉPICÉS</span>
+  </a>
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
+  <nav>
+    <a href="index.html#home"><span class="fr">Accueil</span><span class="en">Home</span></a>
+    <a href="index.html#about"><span class="fr">À propos</span><span class="en">About</span></a>
+    <a href="index.html#events"><span class="fr">Événements</span><span class="en">Events</span></a>
+    <a href="index.html#reviews"><span class="fr">Avis</span><span class="en">Reviews</span></a>
+    <a href="menus.html" style="color:var(--orange)"><span class="fr">Menus</span><span class="en">Menus</span></a>
+    <a href="index.html#join"><span class="fr">Rejoindre</span><span class="en">Join us</span></a>
+    <a href="index.html#donate"><span class="fr">Faire un don</span><span class="en">Donate</span></a>
+    <a href="index.html#contact">Contact</a>
+    <div class="lang">
+      <button data-set-lang="fr" class="active">FR</button><button data-set-lang="en">EN</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="menus">
+  <h2><span class="fr">Nos menus</span><span class="en">Our menus</span></h2>
+  <p class="sub">
+    <span class="fr">Cantine solidaire : choisissez dans nos menus ou demandez un menu sur mesure pour votre événement, petit ou grand. Commandes personnelles à partir de 5 personnes.</span>
+    <span class="en">Solidarity canteen: choose from our menus or ask for a made-to-order menu for your event, small or big. Personal orders from 5 people.</span>
+  </p>
+  <div class="legend">
+    <span class="badge veg"><span class="fr">Végétarien</span><span class="en">Vegetarian</span></span>
+    <span class="badge vegan">Vegan</span>
+    <span class="badge meat"><span class="fr">Viande</span><span class="en">Meat</span></span>
+  </div>
+
+  <div id="menuGrid" class="menu-grid"></div>
+
+  <div class="order-box">
+    <h3><span class="fr">Pour commander</span><span class="en">To order</span></h3>
+    <p class="sub">
+      <span class="fr">Appelez-nous ou écrivez-nous, nous vous répondons avec plaisir.</span>
+      <span class="en">Call or write to us, we will be glad to help.</span>
+    </p>
+    <a class="c-line" href="tel:+33758345968"><i class="dot g">☎</i><span>07 58 34 59 68</span></a>
+    <a class="c-line" href="tel:+33683578326"><i class="dot r">☎</i><span>06 83 57 83 26</span></a>
+    <a class="c-line" href="mailto:lesasepices@gmail.com"><i class="dot y">✉</i><span>lesasepices@gmail.com</span></a>
+    <p style="margin-top:18px"><a class="btn primary" href="index.html#contact"><span class="fr">Nous écrire</span><span class="en">Write to us</span></a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo-main small">LES <b>AS</b> ÉPICÉS</div>
+  <p><span class="fr">Le goût du monde, le partage en plus.</span><span class="en">The taste of the world, with sharing on top.</span></p>
+  <p class="legal"><span class="fr">Association déclarée n° W872017129</span><span class="en">Registered association no. W872017129</span></p>
+  <p class="copy">© <span id="year"></span> Les As Épicés</p>
+</footer>
+
+<script src="menus.js"></script>
+</body>
+</html>
